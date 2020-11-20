@@ -25,7 +25,7 @@ exports.styles = styles;
 
 // Server
 
-const server = () => {
+const server = (data) => {
   sync.init({
     server: {
       baseDir: 'source'
@@ -34,6 +34,7 @@ const server = () => {
     notify: false,
     ui: false,
   });
+  data();
 }
 
 exports.server = server;
