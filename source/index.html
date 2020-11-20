@@ -12,15 +12,17 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="logo" href="#">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип «Pink»">
-      </a>
       <nav class="main-nav">
-        <div class="burger main-nav__burger-menu">
-          <span class="burger__item"></span>
+        <div class="main-nav__header main-nav__header--close">
+          <a class="logo" href="#">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип «Pink»">
+          </a>
+          <div class="burger main-nav__burger-menu">
+            <span class="burger__item"></span>
+          </div>
         </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list site-list--close">
             <li class="site-list__item">
               <a class="site-list__link">Главная</a>
             </li>
@@ -44,19 +46,21 @@
         <h2 class="visually-hidden">Домонстрация приложения «PINK»</h2>
         <div class="intro__wrapper">
           <h3 class="intro__slogan">Взгляните на жизнь иначе!</h3>
-          <a class="button intro__button" href="#">Скачать приложение</a>
-          <ul class="intro__list">
-            <li class="intro__item">
-              <img class="intro__image" src="https://via.placeholder.com/50x50" alt="#">
-            </li>
-            <li class="intro__item">
-              <img class="intro__image" src="https://via.placeholder.com/50x50" alt="#">
-            </li>
-            <li class="intro__item">
-              <img class="intro__image" src="https://via.placeholder.com/50x50" alt="#">
-            </li>
-          </ul>
-          <p class="intro__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="intro__inner">
+            <a class="button intro__button" href="#">Скачать приложение</a>
+            <ul class="intro__list">
+              <li class="intro__item">
+                <img class="intro__image" src="img/logo-apple.svg" alt="#">
+              </li>
+              <li class="intro__item">
+                <img class="intro__image" src="img/logo-android.svg" alt="#">
+              </li>
+              <li class="intro__item">
+                <img class="intro__image" src="img/logo-microsoft.svg" alt="#">
+              </li>
+            </ul>
+            <p class="intro__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
 
@@ -109,13 +113,13 @@
               </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__prev slider__btn" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next slider__btn" type="button">Следующий отзыв</button>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current">1</button>
-            <button class="slider__toggle">2</button>
-            <button class="slider__toggle">3</button>
+            <button class="slider__toggle slider__toggle--current"></button>
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle"></button>
           </p>
         </div>
       </section>
@@ -125,12 +129,12 @@
         <div class="features__wrapper slider">
           <table class="features__table table slider__list">
             <tr class="table__line">
-              <th class="table__title">&nbsp;</th>
+              <th class="table__title table__hidden">&nbsp;</th>
               <th class="table__title">
                 <h3 class="table__lead">База</h3>
                 <p class="table__price">1,99 USD</p>
               </th>
-              <th class="table__title">
+              <th class="table__title table__title--popular">
                 <h3 class="table__lead">Стандарт</h3>
                 <p class="table__price">3,99 USD</p>
               </th>
@@ -140,28 +144,73 @@
               </th>
             </tr>
             <tr class="table__line">
-              <td class="table__element">Розовый фильтр</td>
-              <td class="table__vlue">+</td>
-              <td class="table__vlue">+</td>
-              <td class="table__vlue">+</td>
+              <td class="table__item table__element table__hidden">Розовый фильтр</td>
+              <td class="table__item table__value">
+                <span class="table__element">Розовый фильтр</span>
+                <svg class="table__icon table__icon--yes" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
+              <td class="table__item table__value">
+                <span class="table__element">Розовый фильтр</span>
+                <svg class="table__icon table__icon--yes" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
+              <td class="table__item table__value">
+                <span class="table__element">Розовый фильтр</span>
+                <svg class="table__icon table__icon--yes" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
             </tr>
             <tr class="table__line">
-              <td class="table__element">Смайлики</td>
-              <td class="table__vlue">-</td>
-              <td class="table__vlue">+</td>
-              <td class="table__vlue">+</td>
+              <td class="table__item table__element table__hidden">Смайлики</td>
+              <td class="table__item table__value">
+                <span class="table__element">Смайлики</span>
+                <svg class="table__icon table__icon--no" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </td>
+              <td class="table__item table__value">
+                <span class="table__element">Смайлики</span>
+                <svg class="table__icon table__icon--yes" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
+              <td class="table__item table__value">
+                <span class="table__element">Смайлики</span>
+                <svg class="table__icon table__icon--yes" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
             </tr>
             <tr class="table__line">
-              <td class="table__element">Комментарии</td>
-              <td class="table__vlue">-</td>
-              <td class="table__vlue">-</td>
-              <td class="table__vlue">+</td>
+              <td class="table__item table__element table__hidden">Комментарии</td>
+              <td class="table__item table__value">
+                <span class="table__element">Комментарии</span>
+                <svg class="table__icon table__icon--no" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </td>
+              <td class="table__item table__value">
+                <span class="table__element">Комментарии</span>
+                <svg class="table__icon table__icon--no" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </td>
+              <td class="table__item table__value">
+                <span class="table__element">Комментарии</span>
+                <svg class="table__icon table__icon--yes" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.698px" height="21.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
             </tr>
           </table>
           <p class="features__toggles slider__toggles">
-            <button class="slider__toggle">1</button>
-            <button class="slider__toggle slider__toggle--current">2</button>
-            <button class="slider__toggle">3</button>
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle slider__toggle--current"></button>
+            <button class="slider__toggle"></button>
           </p>
         </div>
       </section>
@@ -173,7 +222,7 @@
             Остались вопросы?<br>
             Свяжитесь с нами!
           </h3>
-          <ul class="address_list">
+          <ul class="address__list">
             <li class="address__item">
               <h4 class="address__lead">Звоните:</h4>
               <a class="address__text address__text--phone" href="tel:89125556666">+7 &#40;812&#41; 555-66-66</a>
@@ -192,7 +241,7 @@
           </ul>
         </div>
         <div class="address__map">
-          <img src="https://via.placeholder.com/320x200" alt="">
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.328381%2C59.938523&utm_medium=mapframe&utm_source=maps&z=15.81" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUAfPVNpB" width="320" height="200" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
         </div>
       </section>
     </main>
@@ -200,24 +249,44 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="logo page-footer__logo" href="#">
-          <img src="https://via.placeholder.com/145x40" alt="Логотип «Pink»">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип «Pink»">
         </a>
         <ul class="page-footer__list social">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">twitter</a>
+            <a class="social__link social__link--twitter" href="#">
+              <svg class="social__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">facebook</a>
+            <a class="social__link social__link--facebook" href="#">
+              <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">youtube</a>
+            <a class="social__link social__link--youtube" href="#">
+              <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+              </svg>
+            </a>
           </li>
         </ul>
         <a class="copyright" href="https://htmlacademy.ru" target="_blank">
-          <p>Разработано</p>
-          <img src="https://via.placeholder.com/27x34" alt="Логотип компании «HTML Academy»">
+          <p class="copyright__text">Разработано</p>
+          <svg class="copyright__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
         </a>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
