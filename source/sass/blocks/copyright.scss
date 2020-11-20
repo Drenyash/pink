@@ -1,0 +1,30 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  &:hover {
+    .copyright__icon {
+      fill: #283645;
+    }
+  }
+  &:active {
+    .copyright__icon {
+      fill: rgba(#283645, 0.3);
+    }
+  }
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: &text-color;
+}
+
+.copyright__icon {
+  margin-left: 15px;
+
+  fill: #d22856;
+
+  transition: 0.2s;
+}

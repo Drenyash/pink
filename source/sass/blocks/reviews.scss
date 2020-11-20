@@ -1,0 +1,31 @@
+.reviews {
+  margin-top: -43px;
+  background-color: #fff;
+}
+
+.reviews__item {
+  display: block;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.reviews__lead {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+
+  color: #000;
+}
+
+.reviews__description {
+  display: none;
+}
+
+.reviews__text {
+  line-height: 30px;
+  color: &text-color;
+}

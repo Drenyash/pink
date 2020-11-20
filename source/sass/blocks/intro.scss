@@ -1,0 +1,40 @@
+.intro {
+  display: block;
+  padding-top: 95px;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom 209px, 0 0;
+}
+
+.intro__slogan {
+  display: block;
+  margin-bottom: 320px;
+  
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+
+  color: #fff;
+}
+
+.intro__inner {
+  display: block;
+  padding: 28px 20px 38px;
+  background-color: #1d2631;
+}
+
+.intro__list {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__info {
+  line-height: 24px;
+  font-weight: 300;
+
+  color: #fff;
+}

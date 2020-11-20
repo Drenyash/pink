@@ -1,0 +1,99 @@
+.burger {
+  position: relative;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+
+  cursor: pointer;
+  transition: 0.3s;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 50px;
+    height: 4px;
+
+    border-radius: 5px;
+    background-color: #fff;
+  
+    transition: 0.3s;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    display: block;
+    width: 50px;
+    height: 4px;
+
+    border-radius: 5px;
+    background-color: #fff;
+  
+    transition: 0.3s;
+  }
+  &:hover {
+    .burger__item {
+      background-color: #D22856;
+    }
+    &::before {
+      background-color: #D22856;
+    }
+    &::after {
+      background-color: #D22856;
+    }
+  }
+  &:active {
+    .burger__item {
+      background-color: rgba(#D22856, 0.3);
+    }
+    &::before {
+      background-color: rgba(#D22856, 0.3)
+    }
+    &::after {
+      background-color: rgba(#D22856, 0.3)
+    }
+  }
+}
+
+.burger__item {
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  display: block;
+  width: 50px;
+  height: 4px;
+
+  border-radius: 5px;
+  background-color: #fff;
+
+  transition: 0.3s, opacity 0.1s;
+}
+
+.burger--active {
+  width: 30px;
+  &::before {
+    width: 30px;
+
+    border-radius: 0;
+    
+    transform: translateY(10px) rotate(45deg);
+  }
+  &::after {
+    width: 30px;
+
+    border-radius: 0;
+
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .burger__item {
+    width: 30px;
+    opacity: 0;
+  }
+}

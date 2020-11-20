@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 9px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 51px;
+  height: 51px;
+
+  border-radius: 50%;
+  border: 3px solid rgba(#283645, 0.1);
+  
+  transition: 0.2s;
+  &:hover {
+    border-color: rgba(#283645, 1);
+  }
+  &:active {
+    .social__icon {
+      opacity: 0.3;
+    }
+    border-color: rgba(#283645, 0.1);
+  }
+}
+
+.social__icon {
+  fill: #d22856;
+}

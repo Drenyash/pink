@@ -1,0 +1,40 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  text-align: center;
+}
+
+.site-list--close {
+  display: none;
+}
+
+.site-list__item {
+  margin-bottom: 1px;
+
+  background: #283645;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15), 0 1px 0 #000;
+}
+
+.site-list__link {
+  display: block;
+
+  padding: 20px;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    color: #D22856;
+  }
+  &:active {
+    color: rgba(#D22856, 0.3);
+  }
+}

@@ -1,0 +1,48 @@
+.address__title {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+
+  color: &text-color;
+}
+
+.address__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.address__item {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.address__lead {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: &text-color;
+}
+
+.address__text {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+
+  color: #d22856;
+  &--address {
+    font-style: normal;
+  }
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+  &:active {
+    color: rgba(#283645, 0.3);
+  }
+}
