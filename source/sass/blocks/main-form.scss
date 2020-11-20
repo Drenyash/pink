@@ -1,0 +1,136 @@
+.main-form__item {
+  margin: 0;
+  padding: 0;
+  padding: 42px 0 44px;
+
+  border: none;
+  &--gray {
+    background-color: #f2f2f2;
+  }
+}
+
+.main-form__box {
+  margin-bottom: 29px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.main-form__title {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.main-form__input {
+  padding: 13px 78px 13px 20px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #283645;
+
+  border-radius: 1px;
+  border: 2px solid #e5e5e5;
+  &::placeholder {
+    color: #283645;
+  }
+  &--area {
+    resize: none;
+  }
+}
+
+.main-form__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #d22856;
+}
+
+.main-form__text {
+  position: relative;
+
+  display: block;
+  padding-left: 59px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+
+  color: &text-color;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 37px;
+    height: 37px;
+
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+
+    transform: translateY(-50%);
+  }
+  &--value--checkbox {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 7px;
+
+      display: none;
+      width: 22px;
+      height: 16px;
+
+      background-image: url("../../img/icon-yes.svg");
+    }
+  }
+  &--value--radio {
+    &::before {
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 11px;
+
+      display: none;
+      width: 15px;
+      height: 15px;
+
+      border-radius: 50%;
+      background-color: #d22856;
+    }
+  }
+}
+
+.main-form__box input:checked ~ .main-form__text::after {
+  display: block;
+}
+
+.main-form__btn {
+  margin-bottom: 40px;
+}
+
+.main-form__required {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: &text-color;
+  span {
+    color: #d22856;
+  }
+}
