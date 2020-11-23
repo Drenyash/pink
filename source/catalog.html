@@ -108,12 +108,13 @@
       <section class="photos">
         <div class="section-header">
           <h2 class="visually-hidden">Фотографии пользователей</h2>
-          <p class="page__lead">Взгляните на фотографии, которые выкладывают пользователи!
+          <p class="page__lead">Взгляните на фотографии, которые выкладывают пользователи!<br>
             Видите, как не хватает ваших?</p>
         </div>
         <div class="photos__list">
           <div class="photos__item photos__item--full">
             <picture>
+              <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 660px)">
               <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
                 <img src="img/panorama-mobile@1x.jpg" alt="Фото панорамы дня">
             </picture>
@@ -258,7 +259,8 @@
             Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <form class="filter__form" action="">
-          <img class="filter__image" src="img/photo-road-mobile@1x.jpg" alt="">
+          <div class="filter__form--wrapper">
+            <img class="filter__image" src="img/photo-road-mobile@1x.jpg" alt="">
           <input class="visually-hidden" type="file">
           <div class="filter__wrapper slider">
             <div class="filter__settings slider__list">
@@ -291,8 +293,11 @@
                 <input id="gamma" type="range" value="50">
               </p>
             </div>
-            <button class="button button--filter filter__btn--submit" type="submit">Запостить</button>
-            <button class="button button--filter button--cancel filter__btn--cancel" type="submit">Отмена</button>
+            <div class="filter__buttons">
+              <button class="button button--filter filter__btn--submit" type="submit">Запостить</button>
+              <button class="button button--filter button--cancel filter__btn--cancel" type="submit">Отмена</button>
+            </div>
+          </div>
           </div>
         </form>
       </section>

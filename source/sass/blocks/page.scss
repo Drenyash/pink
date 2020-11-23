@@ -61,6 +61,8 @@ a {
 }
 
 .section-header {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 50px 20px 60px;
 }
 
@@ -166,10 +168,21 @@ a {
 }
 
 @media (min-width: 660px) {
+  .section-header {
+    max-width: 660px;
+  }
   .page__lead {
     font-size: 18px;
   }
   .page__request {
     display: block;
+  }
+}
+
+@media(min-width: 1200px) {
+  .section-header {
+    max-width: 1200px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
