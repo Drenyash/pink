@@ -1,11 +1,15 @@
 .main-form__item {
+  display: block;
   margin: 0;
   padding: 0;
-  padding: 42px 0 44px;
+  padding: 42px 20px 44px;
 
   border: none;
   &--gray {
     background-color: #f2f2f2;
+  }
+  &:first-child {
+    padding-top: 0;
   }
 }
 
@@ -18,7 +22,8 @@
 
 .main-form__title {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+  padding-left: 23px;
 
   font-size: 14px;
   line-height: 30px;
@@ -28,7 +33,9 @@
 }
 
 .main-form__input {
-  padding: 13px 78px 13px 20px;
+  display: block;
+  width: 100%;
+  padding: 13px 78px 12px 20px;
 
   font-size: 18px;
   line-height: 30px;
@@ -37,11 +44,22 @@
 
   border-radius: 1px;
   border: 2px solid #e5e5e5;
+
+  outline: none;
+
+  transition: 0.2s;
   &::placeholder {
     color: #283645;
   }
   &--area {
+    padding-right: 20px;
     resize: none;
+  }
+  &:hover {
+    border-color: #283645;
+  }
+  &:focus {
+    border-color: #d22856;
   }
 }
 
@@ -67,7 +85,6 @@
   color: &text-color;
 
   cursor: pointer;
-
   &::before {
     content: "";
     position: absolute;
@@ -82,6 +99,7 @@
     background-color: #fff;
 
     transform: translateY(-50%);
+    transition: 0.2s;
   }
   &--value--checkbox {
     &::after {
@@ -94,12 +112,18 @@
       width: 22px;
       height: 16px;
 
-      background-image: url("../../img/icon-yes.svg");
+      mask: url("../../img/icon-yes.svg");
+      mask-size: auto;
+      background-color: #d22856;
+
+      transition: 0.2s;
     }
   }
   &--value--radio {
     &::before {
       border-radius: 50%;
+
+      transition: 0.2s;
     }
     &::after {
       content: "";
@@ -113,6 +137,22 @@
 
       border-radius: 50%;
       background-color: #d22856;
+
+      transition: 0.2s;
+    }
+  }
+  &:hover {
+    &::before {
+      border-color: #283645;
+
+      transition: 0.2s;
+    }
+  }
+  &:active {
+    &::before {
+      border-color: #d22856;
+
+      transition: 0.2s;
     }
   }
 }
@@ -122,15 +162,143 @@
 }
 
 .main-form__btn {
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .main-form__required {
+  display: block;
+  margin: 0 auto;
+
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
   color: &text-color;
   span {
     color: #d22856;
+  }
+}
+
+.main-form__description--hidden {
+  display: none;
+}
+
+.main-form__inner {
+  display: block;
+  width: 100%;
+}
+
+.main-form__icon {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .main-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 50px;
+  }
+  .main-form__item {
+    margin-bottom: 60px;
+    padding: 54px 60px;
+
+    border: 2px solid #e5e5e5;
+    &--first {
+      padding: 0;
+      border: none;
+      order: -2;
+    }
+    &--second {
+      order: 1;
+    }
+    &--third {
+      order: 0;
+    }
+    &--fourth {
+      order: -1;
+    }
+    &--fifth {
+      order: 2;
+    }
+    &--gray {
+      background-color: #fff;
+    }
+    &--info {
+      .main-form__box {
+        display: flex;
+        flex-direction: column;
+      }
+      .main-form__title {
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-right: auto;
+        text-align: left;
+        order: 1;
+      }
+    }
+  }
+  .main-form__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    order: 3;
+  }
+  .main-form__icon {
+    display: block;
+    fill: #d22856;
+  }
+  .main-form__inner {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 59px;
+      height: 59px;
+      background-color: #e5e5e5;
+    }
+    &--top {
+      .main-form__icon {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+      }
+    }
+    &--bottom {
+      .main-form__icon {
+        position: absolute;
+        top: 22px;
+        right: 19px;
+      }
+    }
+  }
+  .main-form__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  .main-form__title {
+    padding-left: 0;
+    margin-right: 20px;
+  }
+  .main-form__description {
+    display: block;
+    padding: 0 22px;
+    background-color: #fff;
+    br {
+      display: none;
+    }
+  }
+  .main-form__required {
+    display: block;
+    margin: 0;
+  }
+  .main-form__btn {
+    margin: 0;
   }
 }

@@ -15,6 +15,12 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -36,21 +42,37 @@ a {
   font-size: 14px;
   font-weight: 400;
   color: $text-color;
+
+  background-color: #fff;
 }
 
-.logo {
-  width: 74px;
-  height: 23px;
+.page__lead {
+  display: block;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: &text-color;
+}
+
+.page__request {
+  display: none;
+}
+
+.section-header {
+  padding: 50px 20px 60px;
 }
 
 .button {
   display: inline-block;
-  padding: 17px 38px;
+  padding: 17px 20px;
+  width: 100%;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-
+  text-align: center;
   color: #fff;
 
   border: 3px solid #fff;
@@ -66,21 +88,88 @@ a {
   &:active {
     color: rgba(#d22856, 0.3);
   }
+  &--filter {
+    color: #d22856;
+
+    border-color: #d22856;
+    &:hover {
+      color: #fff;
+
+      background-color: #d22856;
+    }
+    &:active {
+      color: rgba(#fff, 0.3);
+    }
+  }
+  &--cancel {
+    color: #283645;
+
+    border-color: #283645;
+
+    opacity: 0.1;
+    &:hover {
+      color: #283645;
+      background-color: #fff;
+      opacity: 0.3;
+    }
+    &:active {
+      color: rgba(#fff, 0.3);
+      background-color: #283645;
+    }
+  }
 }
 
 .btn {
   display: block;
   padding: 13px 45px;
-  
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
 
-  border: 2px solid #2AAB6D;
+  border: 2px solid #2aab6d;
   border-radius: 1px;
-  background-color: #2AAB6D;
+  background-color: #2aab6d;
 
   cursor: pointer;
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(#fff, 0.3);
+  }
+  &--disabled {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+    outline: none;
+    &:hover,
+    &:focus {
+      border-color: #e5e5e5;
+      background-color: #e5e5e5;
+    }
+    &:active {
+      color: #fff;
+    }
+  }
+}
+
+.logo__item {
+  transition: 0.2s;
+  fill: #fff;
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+@media (min-width: 660px) {
+  .page__lead {
+    font-size: 18px;
+  }
+  .page__request {
+    display: block;
+  }
 }

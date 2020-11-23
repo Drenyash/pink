@@ -1,0 +1,38 @@
+.filter__form {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.filter__icon {
+  fill: #d22856;
+}
+
+@media(min-width: 660px) {
+  .filter__form {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 20px;
+  }
+  .filter__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  .filter__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(#283645, 0.1);
+    input {
+      width: 100%;
+    }
+  }
+  .filter__settings {
+    margin-bottom: auto;
+  }
+  .filter__btn--submit {
+    margin-bottom: 24px;
+  }
+}

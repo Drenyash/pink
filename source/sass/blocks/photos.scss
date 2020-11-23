@@ -1,0 +1,134 @@
+.photos__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &--full {
+    .photos__most-liked {
+      right: 20px;
+    }
+    .photos__info {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.photos__most-liked {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: inline-block;
+  padding: 4px 20px;
+
+  font-size: 12px;
+  line-height: 24px;
+
+  border-color: #d22856;
+  background-color: #d22856;
+  cursor: auto;
+}
+
+.photos__info {
+  padding: 25px 10px 25px 17px;
+  background-color: #f2f2f2;
+}
+
+.photos__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: &text-color;
+}
+
+.photos__wrapper{
+  display: block;
+  padding: 0 20px;
+}
+
+.photos__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photos__text {
+  display: block;
+  margin-bottom: 15px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: &text-color;
+}
+
+.photos__rating {
+  display: flex;
+  align-items: center;
+}
+
+.photos__liked {
+  margin-left: 18px;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.photos__icon {
+  fill: #d22856;
+}
+
+@media(min-width: 660px) {
+  .photos__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .photos__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+  }
+  .photos__rating {
+    display: flex;
+    margin-top: auto;
+  }
+  .photos__liked {
+    margin: 0;
+  }
+  .photos__icon {
+    margin-left: auto;
+    order: 1;
+  }
+  .photos__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    &--full {
+      margin-bottom: 20px;
+      max-width: none;
+      .photos__info {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .photos__most-liked {
+        top: 57px;
+      }
+      .photos__author {
+        order: -2;
+      }
+      .photos__rating {
+        margin-left: auto;
+        order: -1;
+      }
+      .photos__icon {
+        margin-left: 16px;
+      }
+    }
+  }
+}

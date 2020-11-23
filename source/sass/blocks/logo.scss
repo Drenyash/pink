@@ -1,0 +1,54 @@
+.logo {
+  width: 74px;
+  height: auto;
+}
+
+.logo__item {
+  transition: 0.2s;
+  fill: #fff;
+  &:hover,
+  &:focus {
+    fill: #d22856;
+  }
+  &:active {
+    fill: #fff;
+    opacity: 0.3;
+  }
+}
+
+.logo__tablet {
+  display: none;
+}
+
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .logo {
+    width: 145px;
+    height: 40px;
+  }
+  .logo__mobile {
+    display: none;
+  }
+  .logo__tablet {
+    display: block;
+  }
+  .logo__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 147px;
+    height: auto;
+  }
+  .logo__tablet {
+    display: none;
+  }
+  .logo__desktop {
+    display: block;
+  }
+}

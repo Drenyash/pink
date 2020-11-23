@@ -1,10 +1,10 @@
 .table {
-  border-color: red;
-  border: 1px solid #e5e5e5;
+  margin: 0 auto;
+
   border-collapse: collapse;
 }
 
-.table__hidden {
+.table__element--hidden {
   display: none;
 }
 
@@ -23,7 +23,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      
+
       display: block;
       width: 100px;
       height: 23px;
@@ -34,10 +34,16 @@
       text-align: center;
       color: #fff;
 
-      background-color: #D22856;
+      background-color: #d22856;
 
       transform: translate(-25px, 15px) rotate(-45deg);
     }
+  }
+  &--transparent {
+    margin-left: -1px;
+    margin-right: 1px;
+    border: none;
+    background-color: #f2f2f2;
   }
 }
 
@@ -47,6 +53,11 @@
   border-radius: 5px 0 0 0;
 
   background-color: #fff;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .table__lead {
@@ -67,16 +78,18 @@
 }
 
 .table__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 175px;
+  padding: 15px 20px;
+
   border: 1px solid #e5e5e5;
 }
 
 .table__value {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 280px;
-  padding: 15px 20px;
+  justify-content: center;
 }
 
 .table__element {
@@ -92,5 +105,47 @@
   }
   &--no {
     fill: #f25b26;
+  }
+}
+
+@media (max-width: 659px) {
+  .table--samll-hidden {
+    display: none;
+  }
+  .table__element--hidden {
+    display: block;
+  }
+  .table__item {
+    min-width: 280px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 660px) {
+  .table {
+    width: 100%;
+    margin: 0;
+  }
+  .table__title {
+    padding-right: 34px;
+    padding-left: 33px;
+  }
+  .table__item {
+    padding: 15px 15px;
+    text-transform: unset;
+    min-width: 155px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .table {
+    margin: 0;
+    width: 100%;
+  }
+  .table__item {
+    padding: 15px 22px;
+    min-width: 235px;
+    font-size: 18px;
+    text-transform: unset;
   }
 }

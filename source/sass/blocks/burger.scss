@@ -19,7 +19,7 @@
 
     border-radius: 5px;
     background-color: #fff;
-  
+
     transition: 0.3s;
   }
   &::after {
@@ -34,29 +34,29 @@
 
     border-radius: 5px;
     background-color: #fff;
-  
+
     transition: 0.3s;
   }
   &:hover {
     .burger__item {
-      background-color: #D22856;
+      background-color: #d22856;
     }
     &::before {
-      background-color: #D22856;
+      background-color: #d22856;
     }
     &::after {
-      background-color: #D22856;
+      background-color: #d22856;
     }
   }
   &:active {
     .burger__item {
-      background-color: rgba(#D22856, 0.3);
+      background-color: rgba(#d22856, 0.3);
     }
     &::before {
-      background-color: rgba(#D22856, 0.3)
+      background-color: rgba(#d22856, 0.3);
     }
     &::after {
-      background-color: rgba(#D22856, 0.3)
+      background-color: rgba(#d22856, 0.3);
     }
   }
 }
@@ -82,7 +82,7 @@
     width: 30px;
 
     border-radius: 0;
-    
+
     transform: translateY(10px) rotate(45deg);
   }
   &::after {
@@ -95,5 +95,11 @@
   .burger__item {
     width: 30px;
     opacity: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .burger {
+    display: none;
   }
 }

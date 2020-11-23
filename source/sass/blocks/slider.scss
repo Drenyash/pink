@@ -5,37 +5,27 @@
 .slider__toggles {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 45px;
   padding-bottom: 45px;
-}
-
-.slider__toggle {
-  display: block;
-  width: 6px;
-  height: 6px;
-  margin: 0;
-  margin-right: 19px;
-  padding: 0;
-
-  border: none;
-  border-radius: 50%;
-  background-color: rgba(#283645, 0.3);
-
-  cursor: pointer;
-
-  &:last-child {
-    margin-right: 0;
-  }
-  &:hover {
-    background-color: rgba(#283645, 0.6);
-  }
-  &:active {
-    background-color: rgba(#283645, 0.1);
-  }
 }
 
 .slider__toggle--current {
   box-sizing: content-box;
   border: 3px solid #283645;
   background-color: #fff;
+}
+
+.slider__list {
+  position: relative;
+}
+
+@media (min-width: 660px) {
+  .slider__toggles--features {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  
 }
