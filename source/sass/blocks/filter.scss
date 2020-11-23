@@ -88,10 +88,14 @@
 
 @media (min-width: 1200px) {
   .filter__form {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     background-color: #fff;
   }
   .filter__form--wrapper {
     max-width: 1200px;
+    margin: 0 auto;
     padding-left: 80px;
     padding-right: 60px;
     margin-left: 130px;

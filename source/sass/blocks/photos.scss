@@ -33,6 +33,9 @@
   border-color: #d22856;
   background-color: #d22856;
   cursor: auto;
+  &:hover {
+    background-color: #d22856;
+  }
 }
 
 .photos__info {

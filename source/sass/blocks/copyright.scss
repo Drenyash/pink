@@ -5,10 +5,16 @@
     .copyright__icon {
       fill: #283645;
     }
+    .copyright__text {
+      color: $text-color;
+    }
   }
   &:active {
     .copyright__icon {
       fill: rgba(#283645, 0.3);
+    }
+    .copyright__text {
+      color: $text-color;
     }
   }
 }
@@ -18,7 +24,7 @@
   line-height: 18px;
   font-weight: 400;
 
-  color: &text-color;
+  color: $text-color;
 }
 
 .copyright__icon {

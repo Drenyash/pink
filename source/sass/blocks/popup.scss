@@ -77,3 +77,33 @@
     padding-right: 65px;
   }
 }
+
+@media (min-width: 1200px) {
+  .popup {
+    width: 100%;
+    max-width: 780px;
+  }
+  .popup__header {
+    margin-bottom: 68px;
+    padding-left: 214px;
+    padding-right: 214px;
+  }
+  .popup__footer {
+    padding: 52px 242px;
+    background-color: #F2F2F2;
+  }
+  .popup--ok {
+    .popup__header {
+      padding-left: 192px;
+      padding-right: 192px;
+      margin-bottom: 0;
+    }
+    .popup__title {
+      margin-bottom: 20px;
+    }
+    .popup__footer {
+      padding-left: 162px;
+      padding-right: 162px;
+    }
+  }
+}
