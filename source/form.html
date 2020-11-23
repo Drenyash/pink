@@ -130,29 +130,31 @@
 
           <fieldset class="main-form__item main-form__item--second main-form__item--gray">
             <legend class="main-form__description">Ваши безбашенные<br> достижения в путешествии</legend>
-            <div class="main-form__box">
-              <input class="visually-hidden" id="cb-1" name="achievement" type="checkbox" checked>
-              <label class="main-form__text main-form__text--value--checkbox" for="cb-1">Сделал селфи с акулой</label>
-            </div>
-            <div class="main-form__box">
-              <input class="visually-hidden" id="cb-2" name="achievement" type="checkbox" checked>
-              <label class="main-form__text main-form__text--value--checkbox" for="cb-2">Обгорел на пляже</label>
-            </div>
-            <div class="main-form__box">
-              <input class="visually-hidden" id="cb-3" name="achievement" type="checkbox">
-              <label class="main-form__text main-form__text--value--checkbox" for="cb-3">Видел Чака Норриса</label>
-            </div>
-            <div class="main-form__box">
-              <input class="visually-hidden" id="cb-4" name="achievement" type="checkbox">
-              <label class="main-form__text main-form__text--value--checkbox" for="cb-4">Накупил сувениров</label>
-            </div>
-            <div class="main-form__box">
-              <input class="visually-hidden" id="cb-5" name="achievement" type="checkbox" checked>
-              <label class="main-form__text main-form__text--value--checkbox" for="cb-5">Удержал башню</label>
-            </div>
-            <div class="main-form__box">
-              <input class="visually-hidden" id="cb-6" name="achievement" type="checkbox">
-              <label class="main-form__text main-form__text--value--checkbox" for="cb-6">Разгромил отель</label>
+            <div class="main-form__wrapper">
+              <div class="main-form__box">
+                <input class="visually-hidden" id="cb-1" name="achievement" type="checkbox" checked>
+                <label class="main-form__text main-form__text--value--checkbox" for="cb-1">Сделал селфи с акулой</label>
+              </div>
+              <div class="main-form__box">
+                <input class="visually-hidden" id="cb-2" name="achievement" type="checkbox" checked>
+                <label class="main-form__text main-form__text--value--checkbox" for="cb-2">Обгорел на пляже</label>
+              </div>
+              <div class="main-form__box">
+                <input class="visually-hidden" id="cb-3" name="achievement" type="checkbox">
+                <label class="main-form__text main-form__text--value--checkbox" for="cb-3">Видел Чака Норриса</label>
+              </div>
+              <div class="main-form__box">
+                <input class="visually-hidden" id="cb-4" name="achievement" type="checkbox">
+                <label class="main-form__text main-form__text--value--checkbox" for="cb-4">Накупил сувениров</label>
+              </div>
+              <div class="main-form__box">
+                <input class="visually-hidden" id="cb-5" name="achievement" type="checkbox" checked>
+                <label class="main-form__text main-form__text--value--checkbox" for="cb-5">Удержал башню</label>
+              </div>
+              <div class="main-form__box">
+                <input class="visually-hidden" id="cb-6" name="achievement" type="checkbox">
+                <label class="main-form__text main-form__text--value--checkbox" for="cb-6">Разгромил отель</label>
+              </div>
             </div>
           </fieldset>
 
@@ -210,7 +212,7 @@
 
           <div class="main-form__footer">
             <button class="btn main-form__btn" type="submit">Отправить форму</button>
-            <small class="main-form__required"><span>*</span> &mdash; Обязательные поля</small>
+            <small class="main-form__required"><span>*</span> &mdash; Обязательные <span class="main-form__hidden">для заполнения</span> поля</small>
           </div>
         </form>
       </section>
@@ -219,7 +221,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="logo page-footer__logo" href="#">
-          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип «Pink»">
+          <picture>
+            <source srcset="img/logo-pink-blue-desktop.svg" media="(min-width:1200px)">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип «Pink»">
+          </picture>
         </a>
         <ul class="page-footer__list social">
           <li class="social__item">

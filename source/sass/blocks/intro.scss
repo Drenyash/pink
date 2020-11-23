@@ -90,7 +90,7 @@
       display: none;
     }
     &--bottom {
-      margin-bottom: 39px; 
+      margin-bottom: 39px;
     }
     &--big {
       font-size: 50px;
@@ -145,6 +145,17 @@
     padding-left: 130px;
     padding-right: 130px;
     margin: 0 auto;
+    &--diff {
+      .intro__header {
+        height: 284px;
+        padding-top: 50px;
+      }
+    }
+  }
+  .intro__slogan {
+    br:nth-child(1) {
+      display: none;
+    }
   }
   .intro__header--index {
     background-image: url('../../img/iphone-hand-desktop@1x.png');
