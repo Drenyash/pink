@@ -239,3 +239,29 @@
     max-width: 534px;
   }
 }
+
+@media(min-resolution: 2dppx) {
+  .offers__wrapper::before {
+    background-image: url("../../img/iphone-screen-mobile@2x.png");
+  }
+}
+
+@media(min-resolution: 2dppx) and (min-width: 1200px) {
+  .offers__item {
+    &:nth-child(1) {
+      &::before {
+        background-image: url("../../img/iphone-screen-1-desktop@2x.png");
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        background-image: url("../../img/iphone-screen-2-desktop@2x.png");
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        background-image: url("../../img/iphone-screen-3-desktop@2x.png");
+      }
+    }
+  }
+}

@@ -6,15 +6,18 @@
     margin-bottom: 0;
   }
   &--full {
-    max-width: 320px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    img {
+      width: 100%;
+    }
     .photos__most-liked {
       right: 20px;
     }
     .photos__info {
-      margin-left: 20px;
-      margin-right: 20px;
+      max-width: 280px;
+      margin: 0 auto;
     }
   }
 }
@@ -121,13 +124,13 @@
     margin-bottom: 0;
     &--full {
       margin-bottom: 20px;
-      max-width: 660px;
       margin-left: auto;
       margin-right: auto;
       .photos__info {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        max-width: 620px;
       }
       .photos__most-liked {
         top: 57px;
@@ -149,15 +152,12 @@
 
 @media (min-width: 1200px) {
   .photos__item--full {
-    max-width: 1200px;
     .photos__most-liked {
       top: 54px;
       right: 130px;
     }
     .photos__info {
-      max-width: 1200px;
-      margin-left: 130px;
-      margin-right: 130px;
+      max-width: 940px;
     }
   }
   .photos__wrapper {

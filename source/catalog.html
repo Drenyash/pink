@@ -16,7 +16,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__header main-nav__header--close">
-          <a class="logo">
+          <a class="logo" href="index.html">
             <div class="logo__item logo__mobile">
               <svg width="74.426px" height="22.859px">
                 <use xlink:href="img/sprite.svg#logo-mobile"></use>
@@ -39,11 +39,11 @@
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list site-list--close">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Фотографии</a>
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Конкурс</a>
@@ -76,9 +76,9 @@
         <div class="photos__list">
           <div class="photos__item photos__item--full">
             <picture>
-              <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 660px)">
-              <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
-                <img src="img/panorama-mobile@1x.jpg" alt="Фото панорамы дня">
+              <source srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото панорамы дня">
             </picture>
             <p class="btn photos__most-liked">Панорама дня</p>
             <div class="photos__info">
@@ -97,8 +97,8 @@
           <div class="photos__wrapper">
             <div class="photos__item">
               <picture>
-                <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)">
-                  <img src="img/photo-car-mobile@1x.jpg" alt="">
+                <source srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                  <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="">
               </picture>
               <div class="photos__info">
                 <h3 class="photos__author">Левон<span class="photos__time">&#40;5 часов назад&#41;</span></h3>
@@ -114,8 +114,8 @@
 
             <div class="photos__item">
               <picture>
-                <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)">
-                  <img src="img/photo-drumset-mobile@1x.jpg" alt="">
+                <source srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                  <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="">
               </picture>
               <div class="photos__info">
                 <h3 class="photos__author">Антон<span class="photos__time">&#40;12 часов назад&#41;</span></h3>
@@ -131,8 +131,8 @@
 
             <div class="photos__item">
               <picture>
-                <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)">
-                  <img src="img/photo-window-mobile@1x.jpg" alt="">
+                <source srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                  <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="">
               </picture>
               <div class="photos__info">
                 <h3 class="photos__author">Борис<span class="photos__time">&#40;20 часов назад&#41;</span></h3>
@@ -148,8 +148,8 @@
 
             <div class="photos__item">
               <picture>
-                <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)">
-                  <img src="img/photo-fair-mobile@1x.jpg" alt="">
+                <source srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                  <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="">
               </picture>
               <div class="photos__info">
                 <h3 class="photos__author">Сергей<span class="photos__time">&#40;25 часов назад&#41;</span></h3>
@@ -165,8 +165,8 @@
 
             <div class="photos__item">
               <picture>
-                <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)">
-                <img src="img/photo-pov-mobile@1x.jpg" alt="">
+                <source srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="">
               </picture>
               <div class="photos__info">
                 <h3 class="photos__author">Максим<span class="photos__time">&#40;40 часов назад&#41;</span></h3>
@@ -182,8 +182,8 @@
 
             <div class="photos__item">
               <picture>
-                <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)">
-                <img src="img/photo-wing-mobile@1x.jpg" alt="">
+                <source srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="">
               </picture>
               <div class="photos__info">
                 <h3 class="photos__author">Надежда<span class="photos__time">&#40;45 часов назад&#41;</span></h3>
@@ -208,7 +208,7 @@
         </div>
         <form class="filter__form" action="#" method="POST">
           <div class="filter__form--wrapper">
-            <img class="filter__image" src="img/photo-road-mobile@1x.jpg" alt="">
+            <img class="filter__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="">
           <input class="visually-hidden" type="file">
           <div class="filter__wrapper slider">
             <div class="filter__settings slider__list">
