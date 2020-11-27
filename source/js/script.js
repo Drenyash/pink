@@ -18,3 +18,36 @@ burger.addEventListener('click', function() {
     nav.style.background = '#283645';
   }
 })
+
+const form = document.querySelector('.main-form');
+const popup = document.querySelectorAll('.popup');
+const success = document.querySelector('.popup--ok');
+const error = document.querySelector('.popup--error');
+const submitButton = document.querySelector('.main-form__btn');
+
+popup.forEach((it) => {
+  const popupBtn = it.querySelector('.popup__btn');
+  popupBtn.addEventListener('click', function() {
+    it.classList.remove('popup--toggle');
+  })
+})
+
+submitButton.addEventListener('click', (evt)=> {
+  const inputValidity = form.querySelectorAll('input');
+  const inputs = new Array();
+
+  for (let i = 0; i < inputValidity.length; i++) {
+    if (inputValidity[i].hasAttribute('required')) {
+      inputs.push(inputValidity[i]);
+    }
+  }
+
+  for (let i = 0; i < inputs.length; i++) {
+    if(inputs[i].value === "") {
+      error.classList.add('popup--toggle');
+    } else if (inputs[0].value !== "" && inputs[1].value !== "" && inputs[2].value !== "") {
+      evt.preventDefault();
+      success.classList.add('popup--toggle');
+    }
+  }
+})
